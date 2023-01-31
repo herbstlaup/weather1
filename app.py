@@ -26,7 +26,9 @@ def get_wind1():
 def get_wind2():
    return send_file('forecast wind2.png', mimetype='image/png')
 
-
+@app.route('/heatmap')
+def get_heatmap():
+ return send_file('forecast models.png', mimetype='image/png')
 
 
 if __name__ == "__main__":
