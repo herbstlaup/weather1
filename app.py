@@ -27,9 +27,7 @@ def get_wind2():
    return send_file('forecast wind2.png', mimetype='image/png')
 
 
-@app.route('/headmap')
-def get_heatmap():
- return send_file('forecast models.png', mimetype='image/png')
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
